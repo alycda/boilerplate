@@ -1,3 +1,5 @@
+config.php
+
 vendor
 _images/original/*.jpg
 _images/original/*.gif
