@@ -1,0 +1,16 @@
+.sub-category .category-name {
+	padding-left:1em;	
+}
+
+td.category-name,
+td.content-name { text-align: left; }
+td.category-name span.add-sub { padding-left: 10px; height: 22px; }
+tr.parent-category td.category-name { text-transform: uppercase; font-weight:bold; }
+tr.sub-category td.category-name a { font-weight: normal; }
+
+.breadcrumb .active a{
+	color: #bbb;
+	font-weight: bold;
+}
+
+/*div#gallery-images-container div.sortme { cursor: move; }*/

@@ -1,0 +1,9 @@
+# robotstxt.org/
+
+User-agent: *
+
+Disallow: /_includes/
+Disallow: /_templates/
+Disallow: /6bFQM3N9IqgAHoP/
+Disallow: /52Eb0wNACqfUcuD/
+Disallow: /cmsadmin/

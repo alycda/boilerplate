@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	<chris neal> -- <developer> -- chris[at]tophcreative[dot]com
+    <alyssa davis> -- <editor> -- hello[at]alyda[dot]me
+
+# THANKS
+
+    <nikkelkrome>
+
+# TECHNOLOGY COLOPHON
+
+    PHP, HTML5, CSS3
+    Normalize.css, jQuery, PHP, MySQL
