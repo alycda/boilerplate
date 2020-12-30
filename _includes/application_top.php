@@ -8,8 +8,8 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 ////
 // Set any fluid needed directories
-define('DIR_CMSINCLUDES', dirname(__FILE__).(substr(dirname(__FILE__), -1)!='/'?'/':''), true);
-define('DIR_CMSROOT', realpath(DIR_CMSINCLUDES.'../').'/', true);
+define('DIR_CMSINCLUDES', dirname(__FILE__).(substr(dirname(__FILE__), -1)!='/'?'/':''));
+define('DIR_CMSROOT', realpath(DIR_CMSINCLUDES.'../').'/');
 
 ////
 // Include the main config file
@@ -32,8 +32,8 @@ ini_set('session.gc_maxlifetime', SESSION_LIFETIME);
 
 ////
 // Connect to the DB
-mysql_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD) or die("database access denied");
-mysql_select_db(DB_NAME) or die("database does not exist");
+mysqli_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD) or die("database access denied");
+mysqli_select_db(DB_NAME) or die("database does not exist");
 
 if (defined('SESSION_PATH'))
 	session_save_path(SESSION_PATH);
