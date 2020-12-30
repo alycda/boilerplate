@@ -1,0 +1,26 @@
+image:
+  file: .gitpod.Dockerfile
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 3306
+    onOpen: ignore
+checkoutLocation: "lamp"
+workspaceLocation: "."
+tasks:
+  - name: MySQL
+    command: >
+        mysqld --initialize-insecure;
+        mysqld &
+        sleep 5;
+        cd $GITPOD_REPO_ROOT;
+  - name: Apache
+    command: >
+        apachectl start;
+  - name: Lamp
+    command: >
+        chmod 777 $GITPOD_REPO_ROOT/.htaccess;
+        cd $GITPOD_REPO_ROOT;
+  - name: UI
+    init: npm install -g bower
+    command: bower install

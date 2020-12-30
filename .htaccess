@@ -560,3 +560,8 @@ FileETag None
 # <IfModule mod_headers.c>
 #    Header set Connection Keep-Alive
 # </IfModule>
+
+SetEnvIf X-Forwarded-Proto https HTTPS
+
+php_value upload_max_filesize 40M
+php_value post_max_size 42M
